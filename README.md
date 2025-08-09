@@ -55,3 +55,8 @@ I have also provided the file structure for my main folder, the main folder cont
     ├── ughubProjectFileGenerator.py
     └── ughubUtil.py
 ```
+
+You can get the above tree by executing
+```
+tree -a -L 2 -I '.git|CMake.*'
+```
