@@ -18,3 +18,42 @@ I have provided a simple shell script `repo_info.sh` which will print the above 
 ```
 ./repo_info.sh /path/to/repository
 ```
+
+---
+I have also provided the file structure for my main folder, the main folder contains this repository and `ug4` and `ughub`, the latter two you will need to build separately, by following the directions on the gitHub page for ug4
+.
+├── ug4
+│   ├── .ughub
+│   ├── CMakeLists.txt
+│   ├── apps
+│   ├── bin
+│   ├── build
+│   ├── externals
+│   ├── lib
+│   ├── plugins
+│   ├── tools
+│   └── ugcore
+├── ug4Projects
+│   ├── LICENSE
+│   ├── README.md
+│   ├── docs
+│   ├── images
+│   ├── projects
+│   └── repo_info.sh
+└── ughub
+    ├── .gitignore
+    ├── LICENSE
+    ├── README.md
+    ├── __pycache__
+    ├── autocompletions
+    ├── docu
+    ├── project_templates
+    ├── ughub
+    ├── ughub.bat
+    ├── ughub.py
+    ├── ughubHelp.py
+    ├── ughubHelpContents.py
+    ├── ughubProjectFileGenerator.py
+    └── ughubUtil.py
+
+
