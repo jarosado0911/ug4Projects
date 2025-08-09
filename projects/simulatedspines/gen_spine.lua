@@ -11,7 +11,21 @@
 -- Date:   2025-09-25                                                         --
 --------------------------------------------------------------------------------
 
--- load pre-implemented lua functions
-ug_load_script("ug_util.lua")
+-- this is a helper module I made
+local hlp = require "helperf"
 
-AssertPluginsLoaded({"neuro_collection"})
+-- this will initialize the lua script
+hlp.initialize_script()
+
+-- choose outfile directory
+out_name = util.GetParam("-outName","output")
+file_exists = hlp.dir_exists(out_name);
+if not file_exists then
+    print("Output directory exists: "..tostring(file_exists))
+    os.execute("mkdir -p " .. out_name)
+    print("Made directory: "..out_name)
+else
+    print("Directory: "..out_name.." exists!")
+end
+
+
