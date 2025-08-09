@@ -11,8 +11,7 @@
 -- Date:   2025-09-25                                                         --
 --------------------------------------------------------------------------------
 
--- for profiler output
---SetOutputProfileStats(true)
-
 -- load pre-implemented lua functions
 ug_load_script("ug_util.lua")
+
+AssertPluginsLoaded({"neuro_collection"})
