@@ -9,10 +9,10 @@ Version Tag:        v2021.amfs
 Creation Date:      2015-10-22 11:33:39 +0200
 Last Modified:      2024-06-05 08:08:21 +0200
 Total Commits:      87
-
 ```
----
+
 I have provided a simple shell script `repo_info.sh` which will print the above information for a repo. Its usage is below
+
 ```
 ./repo_info.sh /path/to/repository
 ```
