@@ -1,5 +1,6 @@
 # ug4Projects
 This is where I keep my ug4 project codes and explorations. Below are the specifications of the version of `ughub`
+I recommending cloning ug4/ughub to your `ROOT` directory and building ug4 there.
 
 ```
 📂 Repository Information for ../ughub
