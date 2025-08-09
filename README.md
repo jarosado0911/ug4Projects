@@ -22,7 +22,7 @@ I have provided a simple shell script `repo_info.sh` which will print the above 
 ---
 I have also provided the file structure for my main folder, the main folder contains this repository and `ug4` and `ughub`, the latter two you will need to build separately, by following the directions on the gitHub page for ug4
 
-
+```
 ├── ug4
 │   ├── .ughub
 │   ├── CMakeLists.txt
@@ -56,5 +56,4 @@ I have also provided the file structure for my main folder, the main folder cont
     ├── ughubHelpContents.py
     ├── ughubProjectFileGenerator.py
     └── ughubUtil.py
-
-
+```
