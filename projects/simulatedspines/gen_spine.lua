@@ -11,6 +11,7 @@
 -- Date:   2025-09-25                                                         --
 --------------------------------------------------------------------------------
 
+
 -- this is a helper module I made
 local hlp = require "helperf"
 
@@ -21,7 +22,7 @@ hlp.initialize_script()
 outName = util.GetParam("-outName","output")
 file_exists = hlp.dir_exists(outName);
 if not file_exists then
-    print("Output directory exists: "..tostring(file_exists))
+    print("Directory does not exist: "..tostring(file_exists))
     os.execute("mkdir -p " .. outName)
     print("Made directory: "..outName)
 else
@@ -38,14 +39,15 @@ neckLen = util.GetParamNumber("-neckLen", 0.7)
 headRad = util.GetParamNumber("-headRad", 0.29)
 headLen = util.GetParamNumber("-headLen", 0.58)
 appRad = util.GetParamNumber("-appRad", 0.025)
-appLen = util.GetParamNumber("-appLen", 0.5)
-appHeadLen = util.GetParamNumber("-appHeadLen", 0.0)
-appHeadRad = util.GetParamNumber("-appHeadRad", 0.0)
+appLen = util.GetParamNumber("-appLen", 1.175)
+appHeadLen = util.GetParamNumber("-appHeadLen", 0.3)
+appHeadRad = util.GetParamNumber("-appHeadRad", 0.15)
 buildApp = true
 if appLen == 0 then
 	buildApp = false
 end
 buildAppHead = false
+
 if appHeadLen > 0 and appHeadRad > 0 then
 	buildAppHead = true
 end
