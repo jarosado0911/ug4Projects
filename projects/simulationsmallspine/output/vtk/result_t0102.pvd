@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<VTKFile type="Collection" version="0.1">
-  <Collection>
-  <DataSet timestep="0.0010200000000000005" part="0" file="result_s0_t0102.vtu"/>
-  <DataSet timestep="0.0010200000000000005" part="1" file="result_s1_t0102.vtu"/>
-  <DataSet timestep="0.0010200000000000005" part="2" file="result_s2_t0102.vtu"/>
-  </Collection>
-</VTKFile>
