@@ -117,3 +117,4 @@ make[2]: *** Waiting for unfinished jobs....
 make[1]: *** [CMakeFiles/Makefile2:580: ugcore/plugins/neuro_collection/CMakeFiles/neuro_collection.dir/all] Error 2
 make: *** [Makefile:156: all] Error 2
 ```
+You can disregard this error, `tetgen` execuate is still built in `bin` folder.
