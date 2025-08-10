@@ -1,0 +1,1 @@
+ugshell -ex reconstructed_spine_noER.lua -grid Spine5-nodend-tetra.ugx -numRefs 0 -tstep 2.5e-6 -endTime 0.015 -vtk -pstep 1e-5 -outName output -solver GS
