@@ -96,3 +96,24 @@ this will install two of the projects to the to ug4 build
 ```
 cmake -Dneuro_collection=ON -Dcable_neuron=ON .. && make -j2
 ```
+- I also wanted to use the tetrahedralize features of ug4, to build that plugin you need to execute:
+```
+cmake -Dtetgen=ON -DLINK_TETGEN=ON ..
+```
+-**Note** If you are building `neuron_collection` there appears to be an error with the `tetrahedralize` test, the error may look like below
+```
+/root/ug4/plugins/neuro_collection/test/tetrahedralize_util.cpp: In function ‘bool ug::neuro_collection::Tetrahedralize(ug::Selector&, ug::Grid&, ug::ISubsetHandler*, number, bool, bool, ug::APosition&, int)’:
+/root/ug4/plugins/neuro_collection/test/tetrahedralize_util.cpp:181:56: error: cannot convert ‘char*’ to ‘tetgenbehavior*’
+  181 |                                         tetrahedralize(const_cast<char*>(ss.str().c_str()), &in, &out);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                        |
+      |                                                        char*
+In file included from /root/ug4/plugins/neuro_collection/test/tetrahedralize_util.cpp:46:
+/root/ug4/tools/tetgen/tetgen.h:2233:37: note:   initializing argument 1 of ‘void tetrahedralize(tetgenbehavior*, tetgenio*, tetgenio*, tetgenio*, tetgenio*)’
+ 2233 | void tetrahedralize(tetgenbehavior *b, tetgenio *in, tetgenio *out,
+      |                     ~~~~~~~~~~~~~~~~^
+make[2]: *** [ugcore/plugins/neuro_collection/CMakeFiles/neuro_collection.dir/build.make:622: ugcore/plugins/neuro_collection/CMakeFiles/neuro_collection.dir/test/tetrahedralize_util.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:580: ugcore/plugins/neuro_collection/CMakeFiles/neuro_collection.dir/all] Error 2
+make: *** [Makefile:156: all] Error 2
+```
