@@ -134,7 +134,7 @@ cmake -Dneuro_collection=ON -Dcable_neuron=ON .. && make -j2
 ```
 
 ## Add TeTgen Plugin
-- I also wanted to use the tetrahedralize features of ug4, to build that plugin you need to execute:
+I also wanted to use the tetrahedralize features of ug4, to build that plugin you need to execute:
 ```
 cmake -Dtetgen=ON -DLINK_TETGEN=ON ..
 ```
@@ -156,10 +156,10 @@ make[1]: *** [CMakeFiles/Makefile2:580: ugcore/plugins/neuro_collection/CMakeFil
 make: *** [Makefile:156: all] Error 2
 ```
 You can disregard this error, `tetgen` execuate is still built in `bin` folder.
-- If you plan on using `tetrahedralize` then you will need to comment out the line that the error is referencing, I tried this and it appears to work now.
+**NOTE** - If you plan on using `tetrahedralize` then you will need to comment out the line that the error is referencing, I tried this and it appears to work now.
 
 ## Add SuperLU Plugin
-- To use superlu you will need to execute in the root directory of your `ug4` installation
+To use superlu you will need to execute in the root directory of your `ug4` installation
 ```
 ../ughub/ughub install SuperLU6
 ```
@@ -168,7 +168,7 @@ this will install the plugin folder `SuperLU6`, you will need to go into that di
 git clone https://github.com/xiaoyeli/superlu.git
 ```
 which will clone the superlu repo. **Note** `external` already contains `superlu` folder, just delete that folder.
-- For superlu you will need to execute in the `build` directory
+For superlu you will need to execute in the `build` directory
 ```
 cmake -DSuperLU6=ON .. && make -j2
 ```
