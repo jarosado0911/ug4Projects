@@ -28,7 +28,7 @@ function helperf.initialize_script()
 	ug_load_script("ug_util.lua")
 	print("Loading ug_util.lua ... success!")
 	print("Asserting ProMesh plugin...")
-	AssertPluginsLoaded({"ProMesh"})
+	AssertPluginsLoaded({"neuro_collection","ProMesh"})
 	--print("Asserting ProMesh plugin ... success!")
 
 	-- choose dimension and algebra
