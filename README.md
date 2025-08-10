@@ -44,6 +44,14 @@ Below are some sample images for the geometry generated in the  `gen_spine.lua` 
 </table>
 </div>
 
+Here is a video of a Calcium simulation on an artificial spine, includes cytosol and ER calcium dynamics
+
+<div align="center">
+ <img src="images/calciumtest.gif" width="500"/><br/>
+ <sub> Calcium Dynamics Simulation (3D)</sub>
+</div>
+
+
 Here is also a video of a coupled Calcium and Voltage dynamics simulation
 <div align="center">
  <img src="images/video1dtest.gif" width="500"/><br/>
