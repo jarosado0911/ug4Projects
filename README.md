@@ -133,7 +133,7 @@ next go back into `build` and execute
 cmake -Dneuro_collection=ON -Dcable_neuron=ON .. && make -j2
 ```
 
-## Add TeTgen Plugin
+## Add Tetgen Plugin
 I also wanted to use the tetrahedralize features of ug4, to build that plugin you need to execute:
 ```
 cmake -Dtetgen=ON -DLINK_TETGEN=ON ..
