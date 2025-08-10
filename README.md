@@ -24,21 +24,21 @@ I have provided a simple shell script `repo_info.sh` which will print the above 
   <tr>
     <td align="center">
       <img src="images/artificialspine1.png" width="250"/><br/>
-      <sub>Caption 1</sub>
+      <sub>Artificial Spine</sub>
     </td>
     <td align="center">
       <img src="images/artificialspine2.png" width="250"/><br/>
-      <sub>Caption 2</sub>
+      <sub>Artificial Spine Sliced</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
       <img src="images/artificialspine3.png" width="250"/><br/>
-      <sub>Caption 3</sub>
+      <sub>Artificial Spine Sliced</sub>
     </td>
     <td align="center">
       <img src="images/artificialspine4.png" width="250"/><br/>
-      <sub>Caption 4</sub>
+      <sub>Wire frame geometry</sub>
     </td>
   </tr>
 </table>
