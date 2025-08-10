@@ -17,8 +17,34 @@ I have provided a simple shell script `repo_info.sh` which will print the above 
 ```
 ./repo_info.sh /path/to/repository
 ```
+Below are some sample images for the geometry generated in the  `gen_spine.lua` script:
 
----
+<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/artificialspine1.png" width="450"/><br/>
+      <sub>Artificial Spine</sub>
+    </td>
+    <td align="center">
+      <img src="images/artificialspine2.png" width="450"/><br/>
+      <sub>Artificial Spine Sliced</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/artificialspine3.png" width="450"/><br/>
+      <sub>Artificial Spine Sliced</sub>
+    </td>
+    <td align="center">
+      <img src="images/artificialspine4.png" width="450"/><br/>
+      <sub>Wire frame geometry</sub>
+    </td>
+  </tr>
+</table>
+</div>
+
+# File Structure
 I have also provided the file structure for my main folder, the main folder contains this repository and `ug4` and `ughub`, the latter two you will need to build separately, by following the directions on the gitHub page for ug4
 
 ```
@@ -117,3 +143,4 @@ make[2]: *** Waiting for unfinished jobs....
 make[1]: *** [CMakeFiles/Makefile2:580: ugcore/plugins/neuro_collection/CMakeFiles/neuro_collection.dir/all] Error 2
 make: *** [Makefile:156: all] Error 2
 ```
+You can disregard this error, `tetgen` execuate is still built in `bin` folder.
