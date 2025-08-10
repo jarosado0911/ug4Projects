@@ -19,19 +19,32 @@ I have provided a simple shell script `repo_info.sh` which will print the above 
 ```
 ---
 
+<div align="center">
 <table>
   <tr>
-    <td><img src="images/artificialspine1.png" width="200"/></td>
-    <td><img src="images/artificialspine2.png" width="200"/></td>
+    <td align="center">
+      <img src="images/artificialspine1.png" width="250"/><br/>
+      <sub>Caption 1</sub>
+    </td>
+    <td align="center">
+      <img src="images/artificialspine2.png" width="250"/><br/>
+      <sub>Caption 2</sub>
+    </td>
   </tr>
   <tr>
-    <td><img src="images/artificialspine3.png" width="200"/></td>
-    <td><img src="images/artificialspine4.png" width="200"/></td>
+    <td align="center">
+      <img src="images/artificialspine3.png" width="250"/><br/>
+      <sub>Caption 3</sub>
+    </td>
+    <td align="center">
+      <img src="images/artificialspine4.png" width="250"/><br/>
+      <sub>Caption 4</sub>
+    </td>
   </tr>
 </table>
+</div>
 
 # File Structure
----
 I have also provided the file structure for my main folder, the main folder contains this repository and `ug4` and `ughub`, the latter two you will need to build separately, by following the directions on the gitHub page for ug4
 
 ```
