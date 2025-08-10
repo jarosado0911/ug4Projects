@@ -105,6 +105,12 @@ cmake -DDEBUG=ON -DPARALLEL=OFF -DCMAKE_BUILD_TYPE=Debug -DUSER_LAPACK_LIBRARIES
 - then execute `make -j2`
 - the above steps will build `ugshell` inside `ug4/bin/` folder
 
+## Switching to `mpi` compilers
+If you want to use the `mpi` compilers (should already be part of your Linux OS), then inside `build`
+```
+cmake -DCMAKE_C_COMPILER=/usr/bin/mpicc -DCMAKE_CXX_COMPILER=/usr/bin/mpicxx ..
+```
+
 ## Add ProMesh Plugin
 - still inside `build` execute
 ```
