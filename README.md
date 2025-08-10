@@ -144,3 +144,17 @@ make[1]: *** [CMakeFiles/Makefile2:580: ugcore/plugins/neuro_collection/CMakeFil
 make: *** [Makefile:156: all] Error 2
 ```
 You can disregard this error, `tetgen` execuate is still built in `bin` folder.
+- If you plan on using `tetrahedralize` then you will need to comment out the line that the error is occuring, I tried this and it appears to work now.
+- To use superlu you will need to execute in the root directory of your `ug4` installation
+```
+../ughub/ughub install SuperLU6
+```
+this will install the plugin folder `SuperLU6`, you will need to go into that directory, then navigate to `external` sub folder and then execute
+```
+git clone https://github.com/xiaoyeli/superlu.git
+```
+which will clone the superlu repo. Not `external` already contains `superlu` folder, just delete that folder.
+- For superlu you will need to execute in the `build` directory
+```
+cmake -DSuperLU6=ON ..
+```
