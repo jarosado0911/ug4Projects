@@ -17,27 +17,27 @@ I have provided a simple shell script `repo_info.sh` which will print the above 
 ```
 ./repo_info.sh /path/to/repository
 ```
----
+Below are some sample images for the geometry generated in the  `gen_spine.lua` script:
 
 <div align="center">
 <table>
   <tr>
     <td align="center">
-      <img src="images/artificialspine1.png" width="250"/><br/>
+      <img src="images/artificialspine1.png" width="450"/><br/>
       <sub>Artificial Spine</sub>
     </td>
     <td align="center">
-      <img src="images/artificialspine2.png" width="250"/><br/>
+      <img src="images/artificialspine2.png" width="450"/><br/>
       <sub>Artificial Spine Sliced</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="images/artificialspine3.png" width="250"/><br/>
+      <img src="images/artificialspine3.png" width="450"/><br/>
       <sub>Artificial Spine Sliced</sub>
     </td>
     <td align="center">
-      <img src="images/artificialspine4.png" width="250"/><br/>
+      <img src="images/artificialspine4.png" width="450"/><br/>
       <sub>Wire frame geometry</sub>
     </td>
   </tr>
