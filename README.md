@@ -186,3 +186,12 @@ For superlu you will need to execute in the `build` directory
 ```
 cmake -DSuperLU6=ON .. && make -j2
 ```
+
+## Add ParMetis Plugin
+I also use ParMetis with some of my `.lua` scripts, it is a little tricky, I have include a `Parmetis.tar` which needs to be extracted. Drop the root directory of Parmetis into `ug4/plugins/` folder.
+
+Go back into build and execute
+```
+cmake -DParmetis=ON -DPARALLEL=ON -DDEBUG=OFF -DPCL_DEBUG_BARRIER=ON .. && make -j2
+```
+I turned off `DEBUG` because I noticed error would arise, and to use Parmetis you need `PARALLEL` on.
