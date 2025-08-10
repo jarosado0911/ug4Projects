@@ -133,12 +133,12 @@ next go back into `build` and execute
 cmake -Dneuro_collection=ON -Dcable_neuron=ON .. && make -j2
 ```
 
-## Add TeTgen Plugin
+## Add Tetgen Plugin
 I also wanted to use the tetrahedralize features of ug4, to build that plugin you need to execute:
 ```
 cmake -Dtetgen=ON -DLINK_TETGEN=ON ..
 ```
--**Note** If you are building `neuron_collection` there appears to be an error with the `tetrahedralize` test, the error may look like below
+**Note** If you are building `neuron_collection` there appears to be an error with the `tetrahedralize` test, the error may look like below
 ```
 /root/ug4/plugins/neuro_collection/test/tetrahedralize_util.cpp: In function ‘bool ug::neuro_collection::Tetrahedralize(ug::Selector&, ug::Grid&, ug::ISubsetHandler*, number, bool, bool, ug::APosition&, int)’:
 /root/ug4/plugins/neuro_collection/test/tetrahedralize_util.cpp:181:56: error: cannot convert ‘char*’ to ‘tetgenbehavior*’
