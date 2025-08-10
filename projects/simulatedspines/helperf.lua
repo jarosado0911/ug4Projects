@@ -32,9 +32,8 @@ function helperf.initialize_script()
 	--print("Asserting ProMesh plugin ... success!")
 
 	-- choose dimension and algebra
-	InitUG(3, AlgebraType("CPU", 1));
+	InitUG(3, AlgebraType("CPU", 1))
 end
-
 
 -- must have this last line below!
 return helperf
