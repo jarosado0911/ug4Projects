@@ -112,23 +112,23 @@ cmake -DCMAKE_C_COMPILER=/usr/bin/mpicc -DCMAKE_CXX_COMPILER=/usr/bin/mpicxx ..
 ```
 
 ## Add ProMesh Plugin
-- still inside `build` execute
+Inside the `build` folder execute
 ```
 cmake -DProMesh=ON .. && make -j2
 ```
-- I plan on using ProMesh features in my explorations.
+I plan on using ProMesh features in my explorations, ProMesh has several levels of functionality.
 
 ## Add Neuron Plugins
-- I am also using codes developed by my gradute school colleagues and doctoral advisor, to include them we execute in `ug4` folder
+I am also using codes developed by my gradute school colleagues and doctoral advisor, to include them we execute in `ug4` folder
 ```
 ../path/to/ughub/ughub addsource neurobox https://github.com/NeuroBox3D/neurobox-packages.git
 ```
-- then execute
+then execute
 ```
 ../path/to/ughub/ughub install neuro_collection cable_neuron
 ```
 this will install two of the projects to the to ug4 build
-- next go back into `build` and execute
+next go back into `build` and execute
 ```
 cmake -Dneuro_collection=ON -Dcable_neuron=ON .. && make -j2
 ```
