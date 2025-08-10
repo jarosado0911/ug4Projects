@@ -1,0 +1,3 @@
+# you may need to change the mpirun command, also try different parameters, and obviously use more processors
+
+mpirun --allow-run-as-root -np 8 ugshell -ex reconstructed_spine_viet_noZones.lua -grid geometries/membranes_detached_0_25percent_FINAL.ugx -numRefs 0 -tstep 5e-6 -endTime 15e-6 -vtk -pstep 1e-5 -outName output -solver ILU
