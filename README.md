@@ -44,7 +44,13 @@ Below are some sample images for the geometry generated in the  `gen_spine.lua` 
 </table>
 </div>
 
-# File Structure
+Here is also a video of a coupled Calcium and Voltage dynamics simulation
+<div align="center">
+ <img src="images/video1dtest.gif" width="500"/><br/>
+ <sub> Coupled Calcium and Voltage Simulations (1D)</sub>
+</div>
+
+## File Structure
 I have also provided the file structure for my main folder, the main folder contains this repository and `ug4` and `ughub`, the latter two you will need to build separately, by following the directions on the gitHub page for ug4
 
 ```
