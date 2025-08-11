@@ -58,6 +58,12 @@ Here is also a video of a coupled Calcium and Voltage dynamics simulation
  <sub> Coupled Calcium and Voltage Simulations (1D)</sub>
 </div>
 
+Below is a video of an electrical dynamics simulation on a pyramidal cell
+<div align="center">
+ <img src="images/output1delectrical.gif" width="500"/><br/>
+ <sub> Voltage Simulations (1D)</sub>
+</div>
+
 ## File Structure
 I have also provided the file structure for my main folder, the main folder contains this repository and `ug4` and `ughub`, the latter two you will need to build separately, by following the directions on the gitHub page for ug4
 
