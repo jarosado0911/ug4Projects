@@ -64,6 +64,12 @@ Below is a video of an electrical dynamics simulation on a pyramidal cell
  <sub> Voltage Simulations (1D)</sub>
 </div>
 
+Below is a video of a coupled ion and electrical dynamics simulation on a 1d cell geometry
+<div align="center">
+ <img src="images/output1diondynamics.gif" width="500"/><br/>
+ <sub> Voltage and Ion Coupled Simulation (1D)</sub>
+</div>
+
 ## File Structure
 I have also provided the file structure for my main folder, the main folder contains this repository and `ug4` and `ughub`, the latter two you will need to build separately, by following the directions on the gitHub page for ug4
 
