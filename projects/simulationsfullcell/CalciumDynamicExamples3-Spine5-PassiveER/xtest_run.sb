@@ -1,0 +1,10 @@
+#!/bin/sh 
+#SBATCH --job-name="S5pass" 
+#SBATCH --output="Spine5-passiveER-run.out" 
+#SBATCH --partition=compute 
+#SBATCH --nodes=1 
+#SBATCH --ntasks-per-node=24 
+#SBATCH --export=ALL 
+#SBATCH -t 01:00:00 
+
+ibrun -np 24 ugshell -ex /home/tuh36651/ug4/runs/Spine5_passiveER_run/reconstructed_spine_wER.lua -grid /home/tuh36651/ug4/runs/Spine5_passiveER_run/Spine5_wER.ugx -numRefs 0 -caInflux 0.0086 -tstep 5e-6 -endTime 0.015 -outName /home/tuh36651/ug4/runs/Spine5_passiveER_run/output -solver GS -setting none -minDef 1e-12 -freq 1
