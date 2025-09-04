@@ -1,0 +1,1 @@
+ugshell -ex /Users/jamesrosado/Desktop/testSpine-Dend/reconstructed_spine_noER.lua -grid /Users/jamesrosado/Desktop/testSpine-Dend/noER/Spine13_stubby_noER.ugx -numRefs 0 -tstep 5e-6 -endTime 0.015 -outName /Users/jamesrosado/Desktop/testSpine-Dend/output -solver ILU

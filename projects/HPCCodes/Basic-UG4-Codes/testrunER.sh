@@ -1,0 +1,1 @@
+ugshell -ex /Users/jamesrosado/Desktop/testSpine-Dend/reconstructed_spine_wER.lua -grid /Users/jamesrosado/Desktop/testSpine-Dend/wER/Spine5_wER.ugx -numRefs 0 -tstep 5e-6 -endTime 0.015 -outName /Users/jamesrosado/Desktop/testSpine-Dend/output -solver ILU
