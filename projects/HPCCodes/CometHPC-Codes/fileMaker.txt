@@ -1,0 +1,14 @@
+#001
+n=0;
+max=500;
+mkdir Runs &&
+cd Runs && 
+while [ "$n" -le "$max" ]; do
+  mkdir "Run$n"
+  cd Run$n &&
+  mkdir meas &&
+  mkdir grid &&
+  mkdir vtk &&
+  cd ..
+  n=`expr "$n" + 1`;
+done
